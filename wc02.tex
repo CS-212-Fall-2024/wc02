@@ -1,0 +1,64 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+`'
+\title{Weekly Challenge 02: Deterministic Finite Automata (DFA)}
+\author{CS 212 Nature of Computation\\Habib University}
+\date{Fall 2024}
+
+\qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
+\boxedpoints
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+  
+\titledquestion{A friend from Ohio}
+  You have +100 Aura but your friend from Ohio has -100 Aura, due to this you both are in possession of two different DFAs (FSM) $M_{skibidi}$ and $M_{ohio}$.
+  \begin{itemize}
+  \item $M_{skibidi}=(Q, \{0,1\}, \delta, q_o, F)$ and its language, $L_{skibidi}=L(M_{skibidi})$, and
+  \item $M_{ohio}=(Q, \{0,1\}, \delta, q_o, Q-F)$ and its language, $L_{ohio}=L(M_{ohio})$.
+  \end{itemize}
+
+  Prove that $L_{skibidi} = L_{ohio}'$, where for any language $L$, $L'$ denotes the set-complement of $L$.
+
+  \begin{solution}
+
+  \end{solution}
+  
+\titledquestion{Trade offer}
+Consider the following set of alphabets $\Sigma_{denary} = \{0,1,2,3,4,5,6,7\}$. 
+Now consider the set of alphabets $\Sigma_{binary} = \{0,1\}$. 
+\begin{parts}
+  \part Construct an encoding $f$ from $\Sigma_{denary}$  to $\Sigma_{binary}$.
+  With your encoding construct a DFA(FSM) that accepts all even numbers in $\Sigma_{denary}$, encoded in $\Sigma_{binary}$ under $f$.
+  \\More formally construct a DFA $M$ such that, 
+  $$L(M) = \{w|\;w \in \Sigma_{binary} \text{ and $w$ is an encoding of an even number in $\Sigma_{binary}$ under } f\}$$
+  \begin{solution}
+    
+  \end{solution}
+
+  \part Count how many states are in the DFA constructed in part (a). 
+  Now consider the set of alphabets $\Sigma_{unary} = \{1\}$, construct another encoding $g$ from $\Sigma_{denary}$ to $\Sigma_{unary}$.
+  Imagine you have another DFA $M'$ such that,
+  $$L(M') = \{w|\;w \in \Sigma_{unary} \text{ and $w$ is an encoding of an even number in $\Sigma_{unary}$ under } g\}$$
+  Discuss the tradeoff between the size of the alphabets set and the number of states in a DFA(FSM).
+  What would be the effect on the number of states in $M'$ compared to $M$? Explain your answer.
+  \begin{solution}
+    
+  \end{solution}
+
+\end{parts}
+
+
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
