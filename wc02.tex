@@ -37,7 +37,7 @@ Now consider the set of alphabets $\Sigma_{binary} = \{0,1\}$.
   \part Construct an encoding $f$ from $\Sigma_{denary}$  to $\Sigma_{binary}$.
   With your encoding construct a DFA(FSM) that accepts all even numbers in $\Sigma_{denary}$, encoded in $\Sigma_{binary}$ under $f$.
   \\More formally construct a DFA $M$ such that, 
-  $$L(M) = \{w|\;w \in \Sigma_{binary} \text{ and $w$ is an encoding of an even number in $\Sigma_{binary}$ under } f\}$$
+  $$L(M) = \{w|\;w \in \Sigma_{binary}^* \text{ and $w$ is an encoding of an even number in $\Sigma_{binary}$ under } f\}$$
   \begin{solution}
     
   \end{solution}
@@ -45,7 +45,7 @@ Now consider the set of alphabets $\Sigma_{binary} = \{0,1\}$.
   \part Count how many states are in the DFA constructed in part (a). 
   Now consider the set of alphabets $\Sigma_{unary} = \{1\}$, construct another encoding $g$ from $\Sigma_{denary}$ to $\Sigma_{unary}$.
   Imagine you have another DFA $M'$ such that,
-  $$L(M') = \{w|\;w \in \Sigma_{unary} \text{ and $w$ is an encoding of an even number in $\Sigma_{unary}$ under } g\}$$
+  $$L(M') = \{w|\;w \in \Sigma_{unary}^* \text{ and $w$ is an encoding of an even number in $\Sigma_{unary}$ under } g\}$$
   Discuss the tradeoff between the size of the alphabets set and the number of states in a DFA(FSM).
   What would be the effect on the number of states in $M'$ compared to $M$? Explain your answer.
   \begin{solution}
